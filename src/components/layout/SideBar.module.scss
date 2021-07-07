@@ -1,0 +1,26 @@
+.List {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.Item {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.Icon {
+  font-size: 35px;
+}
+
+.Block {
+  height: 100%;
+  background-color: rgba(0,212,201, 0.3);
+}
+
+.title {
+
+}
