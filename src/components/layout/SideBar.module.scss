@@ -5,6 +5,8 @@
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  padding: 0;
+  width: 100%;
 }
 
 .Item {
@@ -17,8 +19,9 @@
 }
 
 .Block {
+  position: relative;
   height: 100%;
-  background-color: rgba(0,212,201, 0.3);
+  background-color: #F9FAFB;
 }
 
 .title {
