@@ -13,13 +13,13 @@ import styles from './SideBar.module.scss';
 const SideBar = () => {
   const sideBarItems = [
     { title: 'Home', icon: faDiceD6, path: '/' },
-    { title: 'Users', icon: faUsers, path: 'users' },
-    { title: 'User Update', icon: faUserCog, path: 'user-update' },
+    { title: 'Users', icon: faUsers, path: '/users' },
+    { title: 'Add user', icon: faUserCog, path: '/new-user' },
   ];
   const SideBarItem = ({ icon, title }) => (
     <li className={styles.Item}>
       <FontAwesomeIcon className={styles.Icon} icon={icon} />
-      <p className={styles.title}>{title}</p>
+      <p>{title}</p>
     </li>
   );
   SideBarItem.propTypes = {

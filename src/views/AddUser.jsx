@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 
 import UserForm from '../components/UserForm';
-import UserDetails from '../components/UserDetails';
-import { UserProvider } from '../services/UserContext';
+import { UserProvider } from '../context/UserContext';
+import Card from '../components/Card';
+import { buildUserData } from '../helpers/helpers';
 
-const UpdateUser = () => {
+const AddUser = () => {
   const initialUser = {
-    id: 'user001',
-    nickname: '',
-    avatar: 'https://reqres.in/img/faces/7-image.jpg',
-    biography: '',
+    id: '',
+    title: '',
+    subtitle: '',
+    thumbnail: '',
+    description: '',
   };
   const [user, setUser] = useState(initialUser);
 
@@ -21,7 +23,7 @@ const UpdateUser = () => {
   };
 
   const submitForm = (data) => {
-    setUser({ ...user, ...data });
+    setUser(buildUserData({ ...user, ...data }));
   };
 
   return (
@@ -32,9 +34,9 @@ const UpdateUser = () => {
         handleSubmit={submitForm}
         resetForm={resetForm}
       />
-      <UserDetails />
+      { user.id && <Card {...user} /> }
     </UserProvider>
   );
 };
 
-export default UpdateUser;
+export default AddUser;

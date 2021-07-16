@@ -1,20 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import styles from './Header.module.scss';
 
-const Header = ({ pageName }) => (
-  <>
-    <h4 className={styles.Title}>Your wallet</h4>
-    <p><b>{pageName}</b></p>
-  </>
+const Header = () => (
+  <h4 className={styles.Title}>React App</h4>
 );
 
-Header.propTypes = {
-  pageName: PropTypes.string,
-};
-
-Header.defaultProps = {
-  pageName: 'Home',
-};
 export default Header;

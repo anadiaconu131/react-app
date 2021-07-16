@@ -1,10 +1,19 @@
 .Block {
   border-radius: 1.25rem;
   border: dotted #E9ECEF;
-  padding: 1.875rem;
+  padding: 1rem;
+  margin: 0.2rem;
 }
 
 .SubTitle {
   color: #696969;
   font-style: italic;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.Description {
+  max-height: 95px;
+  overflow: hidden;
 }

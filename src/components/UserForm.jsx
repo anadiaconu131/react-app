@@ -5,7 +5,7 @@ import {
 
 import PropTypes from 'prop-types';
 import styles from './UserForm.module.scss';
-import { useUserConsumer } from '../services/UserContext';
+import { useUserConsumer } from '../context/UserContext';
 
 const UserForm = ({ handleSubmit, resetForm }) => {
   const { id } = useUserConsumer();

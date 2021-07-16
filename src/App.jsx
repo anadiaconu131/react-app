@@ -7,7 +7,7 @@ import styles from './App.module.css';
 import SideBar from './components/layout/SideBar';
 import Header from './components/layout/Header';
 import ErrorBoundary from './components/ErrorBoundary';
-import routes from './services/routes';
+import routes from './routes/routes';
 import NotFound from './views/NotFound';
 
 function App() {
@@ -16,10 +16,10 @@ function App() {
       <div className="App">
         <Container fluid>
           <Row>
-            <Col className={`${styles.SideBar} d-none d-lg-block`} lg={2}>
+            <Col className={`${styles.SideBar} d-none d-lg-block`} lg={1}>
               <SideBar />
             </Col>
-            <Col className={styles.AppBlock} lg={10}>
+            <Col className={styles.AppBlock} lg={11}>
               <Header pageName="Home" />
               <Switch>
                 {routes.map((route, i) => (

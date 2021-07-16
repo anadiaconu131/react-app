@@ -1,12 +1,8 @@
 .List {
+  padding-top: 13rem;
+  padding-left: 0;
   list-style: none;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  padding: 0;
-  width: 100%;
 }
 
 .Item {
@@ -19,11 +15,6 @@
 }
 
 .Block {
-  position: relative;
   height: 100%;
   background-color: #F9FAFB;
-}
-
-.title {
-
 }
