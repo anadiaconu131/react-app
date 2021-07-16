@@ -1,0 +1,25 @@
+.JobTitle {
+  text-decoration: none;
+}
+
+.Title {
+  font-size: 25px;
+  font-family: sans-serif;
+  padding-right: 1rem;
+}
+
+.SubTitle {
+  color: #696969;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.Biography {
+  color: #696969;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2rem
+}

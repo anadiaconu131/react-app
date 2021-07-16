@@ -3,7 +3,7 @@ import { Col, Image, Row } from 'react-bootstrap';
 
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import styles from './UserDetails.module.scss';
+import styles from './Card.module.scss';
 
 const Title = ({ title }) => (<h5>{title}</h5>);
 Title.propTypes = {
