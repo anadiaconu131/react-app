@@ -76,4 +76,4 @@ const UserDetails = () => {
   );
 };
 
-export default UserDetails;
+export default React.memo(UserDetails);
